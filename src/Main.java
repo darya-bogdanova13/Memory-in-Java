@@ -1,17 +1,19 @@
+import com.sun.jdi.Value;
+
 import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Задание 8");
-        Integer[] value = new Integer[]{3, 4};
-        changeValue(value);
-        System.out.println(Arrays.toString(value));
+        System.out.println("Задание 9");
+        Person person = new Person("Lyapis ", "Trubetskoy");
+        System.out.println("Value1: " + person);
+        changeValue(person);
+        System.out.println("Value2: " + person);
     }
-
-    private static void changeValue(Integer[] value4) {
-        value4 [0] = 99;
-        System.out.println(Arrays.toString(value4));
+        public static void changeValue(Person person) {
+            System.out.println("changeValue1: " + person);
+            person = new Person("Ilya","Lagutenko");
+            System.out.println("changeValue2: " + person);
+        }
     }
-}
-
