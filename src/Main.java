@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Задание 9");
+        System.out.println("Задание 10");
         Person person = new Person("Lyapis ", "Trubetskoy");
         System.out.println("Value1: " + person);
         changeValue(person);
@@ -13,7 +13,8 @@ public class Main {
     }
         public static void changeValue(Person person) {
             System.out.println("changeValue1: " + person);
-            person = new Person("Ilya","Lagutenko");
+            person.setName("Ilya");
+            person.setSurname("Lagutenko");
             System.out.println("changeValue2: " + person);
         }
     }
